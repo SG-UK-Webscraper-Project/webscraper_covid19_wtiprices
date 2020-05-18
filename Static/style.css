@@ -1,0 +1,281 @@
+#header {
+    transition: all 0.5s;
+    z-index: 99;
+    transition: all 0.5s;
+    position: fixed;
+    background: url("") no-repeat top center fixed;
+    background-size: cover;
+  
+  /* https://cdn.hipwallpaper.com/i/48/64/OR5iNS.jpg */
+  
+    left: 0;
+    top: 0;                                                     
+    right: 0;
+    transition: all 0.5s;                                                                                                                                                                         
+    z-index: 99;
+  }                                                                               
+  
+  body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+  box-sizing: border-box;
+  }
+  
+  .bg-image {
+  /* Full height */
+  height: 100%;
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("https://www.ecpsfound.org/wp-content/uploads/2020/03/COVID19.jpg");}
+  .img2 { background-image: url("https://hbr.org/resources/images/article_assets/2020/04/Apr20_15_CovidTrackingFinal2-2.jpg"); }
+  .img3 { background-image: url("https://cdn.i-scmp.com/sites/default/files/styles/1200x800/public/d8/images/methode/2020/02/19/5e879c34-4d79-11ea-9b4e-9c10402c07b7_image_hires_083821.JPG?itok=51EklPxV&v=1582072709"); }
+  .img4 { background-image: url("https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2012/11/research_lab_shutterstock_88062886.jpg"); }
+  .img5 { background-image: url("https://specials-images.forbesimg.com/imageserve/1028826792/960x0.jpg?fit=scale"); }
+  
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font: Times;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: fixed; /* Stay fixed */
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  text-align: center;
+  }
+  
+  .bg-text2 {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: 10px solid #f1f1f1;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 300px;
+  padding: 20px;
+  text-align: left;
+  }
+  
+  .bg-text3 {
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: 10px solid #f1f1f1;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+    }
+  
+    .bg-text4 {
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border: 10px solid #f1f1f1;
+      position: absolute;
+      top: 250%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 300px;
+      padding: 20px;
+      text-align: left;
+      }
+      
+  
+  
+  
+  .v2 {
+  border-left: 6px;
+  border-color:linear-gradient(red, yellow); 
+  height: 432%;
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  }
+  /*https://codepen.io/pranjal-goswami/pen/RNdpOP*/
+  
+  
+  .glow {
+  font-size: 5em;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  
+  
+  
+  #header.header-scrolled,
+  #header.header-pages {
+    height: 70px;
+    padding: 15px 0;
+    background-color: #fff;
+    
+  }
+  
+  
+  body { }
+  a { color: white; text-decoration: none; }
+  
+  
+  
+  #header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  #intro {
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background: #fff url(""); 
+    background-size: cover;
+  }
+  
+  #intro .intro-info h2 {
+    color: #413e66;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #intro .intro-info h2 span {
+    color: #1bb1dc;
+  }
+  
+  /* Desktop Navigation */
+  
+  .main-nav,
+  .main-nav * {
+    margin: 0;
+    padding-right: 0px;
+    list-style: none;
+  }
+  
+  .main-nav > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+  }
+  
+  .main-nav a {
+    display: block;
+    position: relative;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 18px;
+    font: Times;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  /* Mobile Navigation */
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    left: -260px;
+    width: 260px;
+    padding-top: 18px;
+    transition: 0.4s;
+  }
+  
+  .mobile-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+
+  
+  /* Sections Header
+  --------------------------------*/
+  
+  .section-header h3 {
+    font-size: 36px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #413f66;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  #footer {
+    padding: 0 0 30px 0;
+    font-size: 14px;
+    background: #fff;
+  }
+  
+  #about .footer-top .form .validation {
+    color: red;
+    display: none;
+    margin: 0 0 20px;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+    color: #535074;
+    font-size: 15px;
+  }
+  
+  #footer .contact {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 4px;
+    color: black;
+  }
+

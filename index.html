@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webscraper Project - Covid-19 and Oil Prices</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css">
+    <link rel="stylesheet" href="/Static/style.css" type="text/css">
+  </head>
+
+  <body>
+  	<header id="header">
+	    <div class="container">
+          <div class="bg-text">COVID-19 and Oil prices</div>
+          </div>
+        <nav class="main-nav float-right d-none d-lg-block">
+          <ul>
+            <li><a href="" style="font-size: 24px; color: white;">Page 1</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="intro" class="clearfix">
+      <div class="bg-image img1"></div>
+      <div class="bg-image img2"></div>
+      <div class="bg-image img4"></div> 
+      <div class="bg-text2">China reports a cluster of cases of pneunomia in Wuhan, Hubei Province</div>
+      <div class="bg-text3">As the virus spreads, contact tracing is a critical part of ring-fencing the virus.</div>
+      <div class="bg-text4">Moderna reports 'positive data' on an early-stage trial as the world continues to wait for a successful vaccine</div>
+  
+      <div class="container" style="padding-top: 100px; position: relative; height:80vh; width:80vw">
+        <canvas id="CovidDeathsGraph" width="80%" style = "z-index: 99"></canvas>
+      </div>
+      <div class="container" style="position: relative; height:40vh; width:80vw">
+        <canvas id="OilPriceGraph"></canvas>
+      </div>
+    </section>
+  </body>
+
+  <footer id="footer" class="section-bg">
+  	<div class="footercontainer" style="margin-top: 260%;">
+  		<div class="copyright">
+  			Made by Abinav Baskar, Pranav GK and Saketh MS
+  		</div>
+  		<div class="contact">
+			To contact, please email <a href="covid19webscraper@gmail.com" style="color: blue;">covid19webscraper@gmail.com</a>
+		</div>
+	</div>
+  </footer>
+  <script src="/Static/Game.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>  
+</html>
+
+
+
+
