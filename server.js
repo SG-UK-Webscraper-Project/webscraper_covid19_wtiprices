@@ -1,19 +1,19 @@
-import { join } from 'path';
-import rp from 'request-promise';
-import { writeFile, readFileSync } from "fs";
-import express, { static } from 'express';
-var app = express();
-var server = require('http').createServer(app);
-var io = require('socket.io').listen(server);
-app.use('/Static',static(__dirname + '/Static'));
+var path = require('path');
+const rp = require('request-promise');
+var fs = require("fs");
+var express = require('express'),
+    app = express(),
+    server = require('http').createServer(app),
+    io = require('socket.io').listen(server);
+app.use('/Static',express.static(__dirname + '/Static'));
 app.get('/', function(req, res) {
-  res.sendFile(join(__dirname + '/index.html'));
+  res.sendFile(path.join(__dirname + '/index.html'));
 }); 
 server.listen(process.env.PORT || 3000);
 console.log("Starting on localhost:3000");
 
 
-import cheerio from 'cheerio';
+const cheerio = require('cheerio');
 const covidUrl = 'https://en.wikipedia.org/wiki/COVID-19_pandemic';
 const oilUrl = 'https://oilprice.com/oil-price-charts'; 
 
@@ -81,13 +81,13 @@ function drawGraph() {
 
 
 function writeToFile() {
-  writeFile("covidData.txt", JSON.stringify(covidCases, null, 2), 'utf8', function (err) {
+  fs.writeFile("covidData.txt", JSON.stringify(covidCases, null, 2), 'utf8', function (err) {
     if (err) {
         return console.log(err);
       }
     });
 
-    writeFile("oilData.txt", JSON.stringify(oilWti, null, 2), 'utf8', function (err) {
+    fs.writeFile("oilData.txt", JSON.stringify(oilWti, null, 2), 'utf8', function (err) {
       if (err) {
           return console.log(err);
         }
@@ -95,7 +95,7 @@ function writeToFile() {
 }
 
 function readTheFile() {
-  var read = readFileSync("covidData.txt",'utf8', function (err) {
+  var read = fs.readFileSync("covidData.txt",'utf8', function (err) {
     if (err) {
       return console.log("reading " + err);
     }
@@ -107,7 +107,7 @@ function readTheFile() {
     console.log("covidDays is now " + covidDays);
   }
 
-  read = readFileSync("oilData.txt",'utf8', function (err) {
+  read = fs.readFileSync("oilData.txt",'utf8', function (err) {
     if (err) {
       return console.log("reading oil" + err);
     }
