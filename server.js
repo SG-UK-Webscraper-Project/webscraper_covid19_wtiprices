@@ -1,5 +1,5 @@
 var path = require('path');
-const rp = require('request-promise');
+const rp = require('request');
 var fs = require("fs");
 var express = require('express'),
     app = express(),
