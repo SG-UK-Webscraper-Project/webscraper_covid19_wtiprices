@@ -1,20 +1,36 @@
 {
-  "name": "webscraper",
+  "name": "server-promise",
   "version": "12.16.3",
-  "description": "",
+  "description": "idk",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
+  "author": "bub",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
+    "install": "^0.13.0",
     "nedb": "^1.8.0",
+    "npm": "^6.14.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.5",
     "socket.io": "^2.1.1"
   },
   "engines": {
     "node": "8.11"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abinav-baskar/webscraper_covid19_wtiprices.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abinav-baskar/webscraper_covid19_wtiprices/issues"
+  },
+  "homepage": "https://github.com/abinav-baskar/webscraper_covid19_wtiprices#readme",
+  "keywords": [
+    "2"
+  ]
 }
